@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vira-Tempo">
+    <meta name="keywords" content="Vira-Tempo, Vira tempo, Hipermidia, Audiovisual">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Lucca Rosa">
+
+    <title>Vira-Tempo</title>
+    <link rel="icon" href="img/icon.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- FONT AWESOME -->
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="fontawesome/css/solid.css" rel="stylesheet" />
+    <!-- FONT FAMILY -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,300,700" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+    <script src="js/personagens.js" defer></script>
+    <script src="js/videos.js" defer></script>
+    <script src="js/start.js" defer></script>
+</head>
+<body>
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <section>
+            <div class="topo"></div>
+        </section>
+        <div class="banner">
+            <img class="background" src="img/background.png" alt="vira-tempo">
+            <h1>Vira-Tempo</h1>
+            <p><img src="img/linha-decorativa.png" alt="linha decorativa"></p>
+            <h3>Projeto de Audiovisual focado em Hipermidia</h3>
+        </div>
+    </header>
+
+    <!-- CONTEUDO DO SITE -->
+    <main>
+        <!-- MENU CELULAR -->
+        <div class="menu2">
+            <button id="item1" class="item2 radius" onclick="scrollToSection('conteudo1')"><hr><section>Sinopse</section><i class="fa-solid fa-scroll"></i></button>
+            <button id="item2" class="item2 radius" onclick="scrollToSection('conteudo2')"><hr><section>Jogo</section><i class="fa-solid fa-gamepad"></i></button>
+            <button id="item3" class="item2 radius" onclick="scrollToSection('conteudo3')"><hr><section>Personagens</section><i class="fa-solid fa-users"></i></button>
+            <button id="item4" class="item2 radius" onclick="scrollToSection('conteudo4')"><hr><section>Extra</section><i class="fa-solid fa-folder-open"></i></button>
+        </div>
+
+        <!-- SINOPSE -->
+        <div id="conteudo1" class="conteudo radius">
+            <h2>Sinopse</h2>
+            <hr>
+            <h3>Visão geral</h3>
+            <p>Nosso projeto de hipermídia consiste em um site interativo, onde as pessoas, através de pequenos vídeos poderão acompanhar a história de três amigos que a partir de um jogo viajam no tempo.</p>
+            <p>Essa proposta surgiu através da leitura do livro “O jardim de veredas que se bifurcam” e uma discussão em grupo de como o conceito de subjetividade poderia ser aplicado, junto ao uso da tecnologia, então pensamos nessa espécie de história interativa e subjetiva, através dessa história queremos trazer a tona temas de nosso interesse como casais homoafetivos, problemas familiares e amizade.</p><br>
+
+            <h3>Proposta artística</h3>
+            <p>Nosso filme conta com traços do cinema expandido digitalmente. Com o uso da programação, faremos um site que interage diretamente com o filme e o espectador, dando a oportunidade dele seguir sua própria história.</p>
+            <p>A proposta artística em questão se leva por uma estética "retrô", com uso de cores escuras como o marrom, verde e azul. As personagens equilibram o filme com os tempos atuais, utilizando roupas marcantes e distintas entre si. Figurinos que ressaltam a essência de cada um. Também utilizando alguns estereótipos básicos que retratam a sexualidade das personagens.</p>
+            <p>A arte do filme põe em pauta a discussão sobre como as pessoas se expressam perante suas roupas, e como o ambiente pode refletir em quem somos e nos tornamos. O "retrô" da casa em pleno 2023, também representa um jogo no tempo, quase como um portal temporal, que de certa forma se torna uma mensagem sobre a viagem no tempo abordada no curta.</p><br>
+
+            <h3>Roteiro do Site</h3>
+            <p>Ao ingressar no site, o espectador terá a visão e escolha do que gostaria de visualizar primeiro, a história em si, a bíblia dos personagens, make off e construção do projeto. Será uma página de rolagem única, onde durante toda a página será acompanhado por um mapa animado, mapa esse que remete ao mapa que desenvolvemos para o jogo.</p>
+            <p>A história será um curta, dividido em fragmentos e que dará ao espectador a escolha de que caminho seguir e assim de como ele vai interpretar a história.</p>
+        </div>
+
+        <!-- JOGO E HISTÓRIA -->
+        <div id="conteudo2" class="conteudo radius">
+            <h2>Jogo - Vira-Tempo</h2>
+            <hr>
+            <!-- START do jogo -->
+            <p class="start-jogo"><img src="img/start.png" alt="Começar Jogo"></p>
+            <!-- Mapa do jogo -->
+            <figure class="mapa-jogo" class="radius">
+                <img src="img/jogo.png" usemap="#vira-tempo">
+                <figcaption>Clique em cima das bolinhas para assistir às cenas do jogo.</figcaption>
+
+                <map name="vira-tempo">
+                    <area id="area1" alt="Video 1" title="Video 1" href="https://cdn.pixabay.com/video/2023/10/12/184734-873923034_large.mp4" coords="299,561,20" shape="circle">
+                    <area id="area2" alt="Video 2" title="Video 2" href="https://cdn.pixabay.com/video/2024/02/08/199788-911378451_large.mp4" coords="300,302,20" shape="circle">
+                    <area id="area3" alt="Video 3" title="Video 3" href="https://cdn.pixabay.com/video/2024/02/04/199294-909903183_large.mp4" coords="87,475,21" shape="circle">
+                    <area id="area4" alt="Video 4" title="Video 4" href="https://cdn.pixabay.com/video/2024/01/28/198358-907598215_large.mp4" coords="136,298,20" shape="circle">
+                    <area id="area5" alt="Video 5" title="Video 5" href="https://cdn.pixabay.com/video/2022/11/22/140111-774507949_large.mp4" coords="50,252,20" shape="circle">
+                    <area id="area6" alt="Video 6" title="Video 6" href="https://cdn.pixabay.com/video/2023/10/15/185096-874643413_large.mp4" coords="94,115,20" shape="circle">
+                    <area id="area7" alt="Video 7" title="Video 7" href="https://cdn.pixabay.com/video/2020/03/03/33194-396036988_large.mp4" coords="499,508,21" shape="circle">
+                    <area id="area8" alt="Video 8" title="Video 8" href="https://cdn.pixabay.com/video/2015/08/08/91-135735330_large.mp4" coords="567,253,20" shape="circle">
+                    <area id="area9" alt="Video 9" title="Video 9" href="https://cdn.pixabay.com/video/2019/03/04/21782-321298091_large.mp4" coords="514,96,20" shape="circle">
+                    <area id="area10" alt="Video 10" title="Video 10" href="https://cdn.pixabay.com/video/2020/08/07/46637-448480646_large.mp4" coords="358,179,21" shape="circle">
+                    <area id="area11" alt="Video 11" title="Video 11" href="https://cdn.pixabay.com/video/2019/02/01/21116-315137080_large.mp4" coords="300,39,20" shape="circle">
+                </map>
+            </figure>
+            <!-- Vídeos do jogo -->
+            <div class="videos" id="videos">
+                <div id="loading-indicator" style="display: none;">
+                    <img src="img/icons8-ampulheta.gif" alt="Carregando..." class="loading-gif">
+                </div>
+                <video id="videoPlayer" controls autoplay class="video-frame" controlsList="nodownload">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- PERSONAGENS -->
+        <div id="conteudo3" class="conteudo radius">
+            <h2>Personagens</h2>
+            <hr>
+            <div class="area-personagem">
+                <!-- Personagem 1 -->
+                <div class="personagem" style="background-image: url('img/personagem1.png')" onclick="calcularAlturaMaxima()">
+                    <div class="nome-personagem">Gabriella</div>
+                </div>
+                <!-- Personagem 2 -->
+                <div class="personagem" style="background-image: url('img/personagem2.png')" onclick="calcularAlturaMaxima()">
+                    <div class="nome-personagem">Gustavo</div>
+                </div>
+                <!-- Personagem 3 -->
+                <div class="personagem" style="background-image: url('img/personagem3.png')" onclick="calcularAlturaMaxima()">
+                    <div class="nome-personagem">Liz</div>
+                </div>
+                <!-- Personagem 4 -->
+                <div class="personagem" style="background-image: url('img/personagem4.png')" onclick="calcularAlturaMaxima()">
+                    <div class="nome-personagem">Valentina</div>
+                </div>
+            </div>
+            <!-- Informações do Personagem -->
+            <div class="overlay">
+                <div class="close-btn"><i class="fa-regular fa-circle-xmark btn-i"></i></div>
+                <div class="informacoes">
+                    <h2 id="personagemTitulo" class="radius"></h2>
+                    <p id="personagemNascimento"></p>
+                    <p id="personagemNacionalidade"></p>
+                    <p id="personagemInfo" class="radius"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXTRA -->
+        <div id="conteudo4" class="conteudo extra radius">
+            <h2>Extras</h2>
+            <hr>
+            <!-- MAKE OFF-->
+            <h3>Make off</h3>
+            <iframe class="radius" src="https://www.youtube.com/embed/VIDEO1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+            <!-- CONSTRUÇÃO DO PROJETO-->
+            <h3>Construção do Projeto</h3>
+            <iframe class="radius" src="https://www.youtube.com/embed/JVIDEO2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+
+
+            <!-- CRÉDITOS -->
+            <h3>Créditos</h3>
+
+            <h4>Direção</h4>
+            <p>Mariana Rainha de Morais</p><br>
+            
+            <h4>Produção</h4>
+            <p>Ana Clara Carvalho Paseli</p><br>
+            
+            <h4>Assistente de direção</h4>
+            <p>Rafaela Barana Chagas</p><br>
+            
+            <h4>Fotografia</h4>
+            <p>Rafaela Camargo Dias</p><br>
+            
+            <h4>Direção de Arte</h4>
+            <p>Clara Luz de Siqueira Carvalho Sene Coelho</p><br>
+            
+            <h4>Continuísta</h4>
+            <p>Ana Luiza Freitas Sousa</p><br>
+            
+            <h4>Som</h4>
+            <p>Blue Oliveira Souza Silva</p><br>
+
+            <h4>Roteiro</h4>
+            <p>Blue Oliveira Souza Silva</p>
+            <p>Mariana Rainha</p><br>
+
+            <h4>Programador Web</h4>
+            <p>Lucca Rosa Soares de Souza</p><br><hr><br>
+
+            <!-- EMAIL -->
+            <h3>Conteúdo por email</h3>
+            <h5>Receba e jogue o jogo que os personagens jogaram agora pelo seu email!</h5>
+            <form>
+                <input class="radius" type="email" name="email" placeholder="Seu email">
+                <button class="radius">Receber</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape container">
+        <p>Copyright © Vira-Tempo - Todos os direitos reservados</p>
+        <p>Desenvolvido por Lucca Rosa</p>
+    </footer>
+</body>
+</html>
